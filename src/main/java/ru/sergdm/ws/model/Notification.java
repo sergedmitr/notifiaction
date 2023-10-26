@@ -16,7 +16,7 @@ public class Notification {
 	@Column(nullable = false)
 	Long orderId;
 	@Column(nullable = false)
-	String userId;
+	Long userId;
 	@Column(nullable = false)
 	String message;
 
@@ -36,11 +36,11 @@ public class Notification {
 		this.orderId = orderId;
 	}
 
-	public String getUserId() {
+	public Long getUserId() {
 		return userId;
 	}
 
-	public void setUserId(String userId) {
+	public void setUserId(Long userId) {
 		this.userId = userId;
 	}
 
